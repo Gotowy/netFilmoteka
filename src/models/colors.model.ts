@@ -1,0 +1,16 @@
+export enum Color {
+    FILLER = 'filler',
+    FILLER_TRANSPARENT = 'filler-transparent',
+    FILLER_LIGHT_TRANSPARENT = 'filler-light-transparent',
+    PRIMARY = 'primary',
+    PRIMARY_DARK_1 = 'primary-dark-1',
+    PRIMARY_DARK_2 = 'primary-dark-2',
+    PRIMARY_LIGHT_1 = 'primary-light-1',
+    PRIMARY_LIGHT_2 = 'primary-light-2',
+    ANNOTATION = 'annotation',
+    ANNOTATION_DARK = 'annotation-dark',
+    ANNOTATION_LIGHT = 'annotation-light',
+    TEXT = 'text',
+    TEXT_TRANSPARENT = 'text-transparent',
+    SECONDARY = 'secondary',
+}

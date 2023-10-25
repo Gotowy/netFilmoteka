@@ -1,0 +1,7 @@
+@use './rwd.scss';
+
+@mixin content-wrapper {
+  max-width: rwd.$desktop;
+  margin: 0 auto;
+  flex: 1;
+}
