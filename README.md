@@ -1,68 +1,25 @@
-# netFilmoteka
+# netFilmoteka - movie browsing portal (under construction)
 
-This template should help get you started developing with Vue 3 in Vite.
+This is going to be a refactored Vue version of my old personal React project where main purpose was to build an application which uses a third part API in case to create some functional web portal. In current approach I wanted to use newer technologies I am currently working with and keep code cleaner in order to have no problem with expanding it even more in the future.
 
-## Recommended IDE Setup
+## Technologies:
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+TypeScript <br />
+Vue 3 (Composition API with Router)<br />
+Pinia <br />
+Sass <br />
+Vite <br />
+Vitest <br />
+Vue Test Utils <br />
+Cypress <br />
+TMDb API <br />
+Google fonts <br />
 
-## Type Support for `.vue` Imports in TS
+## Functionality:
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+The web site will allow to browse movies existing in The Movie Database by part of name in multiple languages. There will be also possibility of searching movies by genre or filter them by certain criterium and check for more details about chosen movie (including its IMDB profile). The project is responsive and going to include pagination.
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+## Status:
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+I have just started migration of the project from old React version to Vue. Currently I have divided it into modules and prepared some UI elements and views. I still need to: connect it with the API, incorporate store, add pagination and adjust filtering. I am also going to include unit and E2E tests with Vitest and Cypress. This could be the end of the first stage of the project. Next I would think about some BE solutions enabling user accounts with some more advanced options enabled.
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-npm run test:unit
-```
-
-### Run End-to-End Tests with [Cypress](https://www.cypress.io/)
-
-```sh
-npm run test:e2e:dev
-```
-
-This runs the end-to-end tests against the Vite development server.
-It is much faster than the production build.
-
-But it's still recommended to test the production build with `test:e2e` before deploying (e.g. in CI environments):
-
-```sh
-npm run build
-npm run test:e2e
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
